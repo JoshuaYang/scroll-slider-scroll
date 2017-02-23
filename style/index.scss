@@ -41,36 +41,44 @@ section{
     .part-scroll{
         font-size: 50px;
         height: 500px;
-
-        &.part-scroll-1{
-            background-color: pink;
-        }
-        &.part-scroll-2{
-            background-color: blue;
-        }
+        background-color: pink;
     }
+
+
+
 
     .part-slider{
 
     }
 
+    .pin-box {
+        background-image: url('../image/bg.jpg');
+        background-repeat: no-repeat;
+        transition: background 1s ease;
+
+        &.pos0{
+            background-position: 0% 0%;
+            background-size: 420%;
+        }
+        &.pos1{
+            background-position: 95% 1%;
+            background-size: 200%;
+        }
+        &.pos2{
+            background-position: 5% 50%;
+            background-size: 260%;
+        }
+    }
+
     .swiper-container{
-        width: 100%;
+        width: 45%;
         height: calc(100vh - 118px);
+        margin-left: 55%;
 
         .swiper-wrapper{
             .swiper-slide{
                 font-size: 50px;
-                
-                &:nth-child(1){
-                    background-color: #729EA1;
-                }
-                &:nth-child(2){
-                    background-color: #B5BD89;
-                }
-                &:nth-child(3){
-                    background-color: #DFBE99;
-                }
+                background-color: rgba(255,255,255,0.5);
             }
         }
     }
